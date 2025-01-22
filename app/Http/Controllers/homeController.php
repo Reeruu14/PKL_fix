@@ -1,12 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-abstract class homeController
+class HomeController extends Controller
 {
     public function index()
     {
-        return Inertia::render('home', [1]);
+        return Inertia::render('home');
     }
 }
